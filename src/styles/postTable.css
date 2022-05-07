@@ -1,0 +1,106 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.thead {
+  display: table;
+  width: calc(100% - var(--width-scroll));
+}
+
+.table > tbody {
+  width: 100%;
+  /* Все место кроме фильтров, заголовка таблицы и пагинации */
+  height: calc(100vh - 190px);
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.table > tbody::-webkit-scrollbar {
+  width: var(--width-scroll);
+}
+
+.table > tbody::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+}
+
+.table > tbody::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #474955;
+}
+
+tr {
+  display: table;
+  width: 100%;
+
+}
+
+th, td {
+  border: 1px solid #E3E6EC;
+}
+
+th, td {
+  padding: 14px 8px;
+}
+
+.table__head {
+  height: 54px;
+  background-color: #474955;
+  color: #ffffff;
+  font-weight: 600;
+
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+
+.table__head,
+.table__head > th {
+  border: #474955;
+}
+
+.table__cell-id,
+.table__head-id {
+  text-align: center;
+  min-width: 40px;
+  width: 80px;
+  padding: 2px;
+  word-break: break-all;
+}
+
+.table__head-title,
+.table__cell-title {
+  width: clamp(60px, 20%, 80px);
+  min-width: 135px;
+}
+
+.table__head-body,
+.table__cell-body {
+  width: 70%;
+  min-width: 145px;
+}
+
+.table__sort-wrap {
+  display: inline-block;
+}
+
+.table__sort-wrap > svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.table__sort-icon_active {
+  color: green;
+}
+
+.table__row-empty> td {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+}

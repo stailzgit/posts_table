@@ -1,0 +1,6 @@
+.posts__container {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 52px ;
+}
+

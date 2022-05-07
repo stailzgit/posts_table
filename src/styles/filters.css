@@ -1,0 +1,12 @@
+.filters__wrap {
+  max-width: 800px;
+  min-width: 300px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.filters__stats {
+  display: flex;
+}

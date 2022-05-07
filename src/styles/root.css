@@ -1,0 +1,18 @@
+@import url("./reset.css");
+@import url("./posts.css");
+@import url("./filters.css");
+@import url("./postTable.css");
+@import url("./pagination.css");
+
+
+:root {
+  --width-scroll: 12px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 12px;
+  margin: 0 auto;
+  position: relative;
+}
+
