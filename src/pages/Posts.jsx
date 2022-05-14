@@ -11,7 +11,6 @@ import { useFetching } from "../hooks/useFetching";
 import { useNavigate } from "react-router-dom";
 
 const Posts = () => {
-  console.log("Posts render");
   const navigate = useNavigate();
   const [posts, setPosts] = useState([]);
   const { search, debouncedSearch, onSearchChange, resetSearch } =
@@ -35,11 +34,11 @@ const Posts = () => {
   useEffect(() => {
     fetchPosts(limit, page, debouncedSearch, sort);
     setPage(1);
-  }, [limit]);
+  }, [limit, debouncedSearch]);
 
   useEffect(() => {
     fetchPosts(limit, page, debouncedSearch, sort);
-  }, [page, debouncedSearch, sort]);
+  }, [page, sort]);
 
   //Показать страницу таблицы в URL
   useEffect(() => {

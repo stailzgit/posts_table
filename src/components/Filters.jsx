@@ -15,7 +15,6 @@ import {
 } from "@mui/material";
 
 const Filters = React.memo((props) => {
-  console.log("Filters");
   const {
     search,
     onSearchChange,

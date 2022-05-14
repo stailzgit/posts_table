@@ -3,8 +3,7 @@ import Highlighter from "react-highlight-words";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 
-const PostTable = React.memo((props) => {
-  console.log("PostTable");
+const PostTable = (props) => {
   const { posts, sort, setSort, debouncedSearch, isPostsLoading } = props;
 
   const ArrowSortUI = (title) => {
@@ -81,6 +80,6 @@ const PostTable = React.memo((props) => {
       </tbody>
     </table>
   );
-});
+};
 
 export default PostTable;
