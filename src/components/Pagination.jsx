@@ -16,6 +16,7 @@ const Pagination = (props) => {
     pageSize,
   });
 
+  console.log("paginationRange", paginationRange);
   if (paginationRange.length <= 1) return <></>;
 
   const lastPage = paginationRange[paginationRange.length - 1];
@@ -41,8 +42,8 @@ const Pagination = (props) => {
       </div>
 
       <div className="pagination__items">
-        {paginationRange.map((pageNumber) => (
-          <div key={pageNumber}>
+        {paginationRange.map((pageNumber, index) => (
+          <div key={index}>
             {pageNumber === DOTS ? (
               <div className="pagination__dots">&#8230;</div>
             ) : (
