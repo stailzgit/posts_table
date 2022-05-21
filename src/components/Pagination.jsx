@@ -41,8 +41,8 @@ const Pagination = (props) => {
       </div>
 
       <div className="pagination__items">
-        {paginationRange.map((pageNumber) => (
-          <div key={pageNumber}>
+        {paginationRange.map((pageNumber, index) => (
+          <div key={index}>
             {pageNumber === DOTS ? (
               <div className="pagination__dots">&#8230;</div>
             ) : (
