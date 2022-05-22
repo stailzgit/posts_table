@@ -1,5 +1,6 @@
 .pagination-container {
   position: absolute;
+  user-select: none;
   bottom: 10px;
   left: 0;
   right: 0;
@@ -42,7 +43,11 @@
   color: #7EBC3C;
   font-weight: 700;
 }
+
+
 /******** Уменьшение отступа от точек ********/
+
+
 /* .pagination__item + .pagination__dots  {
   margin-left: -4px ;
 }
@@ -71,11 +76,11 @@
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-
   -moz-user-select: none;
   -khtml-user-select: none;
   user-select: none;
 }
+
 .pagination__btn_disabled {
   cursor: default;
   color: gray;

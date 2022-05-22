@@ -16,6 +16,7 @@ const Pagination = (props) => {
     pageSize,
   });
 
+  console.log("paginationRange", paginationRange);
   if (paginationRange.length <= 1) return <></>;
 
   const lastPage = paginationRange[paginationRange.length - 1];
